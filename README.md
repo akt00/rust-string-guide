@@ -1,3 +1,12 @@
 # Rust-String-Complete-Guide
-## Motivation
-Coming from the background with C/C++ and a bit of Python and Javascript, I found Rust's string type system a little confusing. So I wrote this down to help understand the Rust's string data type.
+---
+## Preface
+### Motivation
+Coming from the background of C/C++ and a bit of Python and Javascript, I found Rust's string type system a little confusing. So I wrote this down to help understand the Rust's string data type.
+### Expected Level
+beginner
+### References
+[Rust By Example](https://doc.rust-lang.org/rust-by-example/std/str.html)\
+[Rust-doc String](https://doc.rust-lang.org/std/string/struct.String.html#method.split_off)
+[Rust-doc Str](https://doc.rust-lang.org/std/primitive.str.html#impl-Add%3C%26%27_%20str%3E)
+
