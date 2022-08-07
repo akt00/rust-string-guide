@@ -76,7 +76,15 @@ pan
 However, in Rust, it is not possible to access the elements in a string by indexing because the UTF-8 character is variable length.
 ```rb
 let mut s = String::from("pen");
-s[1] = 'a';
+s[1] = 'a'; // error
+```
+You can access each element through an iterator. However, you cannot randomly index into a character nor change the value because a UTF-8 character in a string is not easy to replace due to variable length.
+```rb
+let s = String::from("hello");
+for i in s.chars() {
+  print!("{i}");
+}
 ```
 
+---
 ## Examples
