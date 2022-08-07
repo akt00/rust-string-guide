@@ -67,7 +67,7 @@ In C/C++, you can access the characters in a string by indexing like so,
 std::string str = "pen";
 str[1] = 'a';
 std::cout << str << std::endl;
----
+```
 Possible output
 ```
 pan
@@ -77,6 +77,6 @@ However, in Rust, it is not possible to access the elements in a string by index
 ```rb
 let mut s = String::from("pen");
 s[1] = 'a';
-  
+```
 
 ## Examples
