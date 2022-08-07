@@ -8,5 +8,5 @@ Beginner - Intermediate
 ### References
 [Rust By Example](https://doc.rust-lang.org/rust-by-example/std/str.html)\
 [Rust-doc String](https://doc.rust-lang.org/std/string/struct.String.html#method.split_off)\
-[Rust-doc Str](https://doc.rust-lang.org/std/primitive.str.html#impl-Add%3C%26%27_%20str%3E)\
+[Rust-doc Str](https://doc.rust-lang.org/std/primitive.str.html#impl-Add%3C%26%27_%20str%3E)
 
