@@ -9,7 +9,7 @@ Beginner - Intermediate
 ### *References*
 1. [Rust By Example](https://doc.rust-lang.org/rust-by-example/std/str.html)
 2. [Rust-doc String](https://doc.rust-lang.org/std/string/struct.String.html#method.split_off)
-3. [Rust-doc Str](https://doc.rust-lang.org/std/primitive.str.html#impl-Add%3C%26%27_%20str%3E)
+3. [Rust-doc str](https://doc.rust-lang.org/std/primitive.str.html#impl-Add%3C%26%27_%20str%3E)
 
 
 ## Introduction
@@ -28,5 +28,8 @@ size of char = 4 bytes
 
 ### String and &str
 In Rust, you often see two types of strings, String and &str. According to the [Rust by Example](https://doc.rust-lang.org/rust-by-example/std/str.html), the difference is 
+
 > A String is stored as a vector of bytes (Vec\<u8\>), but guaranteed to always be a valid UTF-8 sequence. String is heap allocated, growable and not null terminated. \
 &str is a slice (&[u8]) that always points to a valid UTF-8 sequence, and can be used to view into a String, just like &[T] is a view into Vec<T>.
+
+This basically means String is a Vec<u8> container which contains UTF-8 characters allocated on heap, and &str is a view over String. 
