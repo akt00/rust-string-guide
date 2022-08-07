@@ -22,7 +22,7 @@ Example
 println!("size of char = {} bytes", size_of::<char>());
 ```
 Possible output
-```rb
+```
 size of char = 4 bytes
 ```
 
