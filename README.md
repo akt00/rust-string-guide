@@ -4,7 +4,7 @@
 ### Motivation
 Coming from the background of C/C++ and a bit of Python and Javascript, I found Rust's string type system a little confusing. So I wrote this down to help understand the Rust's string data type.
 ### Expected Level
-beginner
+Beginner - Intermediate
 ### References
 [Rust By Example](https://doc.rust-lang.org/rust-by-example/std/str.html)\
 [Rust-doc String](https://doc.rust-lang.org/std/string/struct.String.html#method.split_off)
