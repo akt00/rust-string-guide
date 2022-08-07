@@ -35,15 +35,25 @@ In Rust, you often see two types of strings, String and &str. According to the [
 This basically means String is a Vec\<u8\> container which contains UTF-8 characters allocated on heap, and &str is a view over a string object. 
 
 
-Below, str1 is allocated on heap with String::from method. str2 is a string view on a string literal which is directory embedded in the binary. 
+Below, s1 is allocated on heap with String::from method. s2 is a string view over a string literal which is directory embedded in the binary.
 ```rb
-let str1 = String::from("hello"); // String
-let str2 = "Hello"; // &str
+let s1 = String::from("hello"); // String
+let s2 = "Hello"; // &str
 ```
 
 Since $str is a view, you cannot modify the value it is referencing unlike String.
 ```rb
-str1 += " World";
+let mut s1 = String::from("hello"); // String
+let mut s2 = "hello"; // &str
+
+s1 += " world"; // ok
+s2 += " world"; // error
+
+
+
+
+
+
 
 ---
 ## Examples
