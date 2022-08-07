@@ -85,6 +85,10 @@ for i in s.chars() {
   print!("{i}");
 }
 ```
+Possible output
+```
+hello
+```
 
 ---
 ## Examples
