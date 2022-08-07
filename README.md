@@ -32,7 +32,7 @@ In Rust, you often see two types of strings, String and &str. According to the [
 > A String is stored as a vector of bytes (Vec\<u8\>), but guaranteed to always be a valid UTF-8 sequence. String is heap allocated, growable and not null terminated. \
 &str is a slice (&[u8]) that always points to a valid UTF-8 sequence, and can be used to view into a String, just like &[T] is a view into Vec<T>.
 
-This basically means String is a Vec\<u8\> container which contains UTF-8 characters allocated on heap, and &str is a view over a string object. 
+This basically means String is a Vec\<u8\> container which contains UTF-8 characters allocated on heap, and &str is a view over a string object. In other words, String owns the object itself while &str references the object.
 
 
 Bellow, s1 is allocated on heap with String::from method. s2 is a string view over a string literal which is directory embedded in the binary.
@@ -61,6 +61,22 @@ Possible output
 hello world
 ```
 
-
+## *Indexing*
+In C/C++, you can access the characters in a string by indexing like so,
+```rb
+std::string str = "pen";
+str[1] = 'a';
+std::cout << str << std::endl;
 ---
+Possible output
+```
+pan
+```
+
+However, in Rust, it is not possible to access the elements in a string by indexing because the UTF-8 character is variable length.
+```rb
+let mut s = String::from("pen");
+s[1] = 'a';
+  
+
 ## Examples
