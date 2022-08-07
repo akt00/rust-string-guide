@@ -61,7 +61,7 @@ Possible output
 hello world
 ```
 
-## *Indexing*
+### *Indexing*
 In C/C++, you can access the characters in a string by indexing like so,
 ```rb
 std::string str = "pen";
