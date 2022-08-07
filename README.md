@@ -49,17 +49,18 @@ let mut s2 = "hello"; // &str
 s1 += " world"; // ok
 s2 += " world"; // error
 ```
-  
-You can also create a view over String.
+
+You can also create a view over a String.
 ```rb
-  let s = String::from("hello world");
-  let view: &str = &s;
-  println!("{view}");
+let s = String::from("hello world");
+let view: &str = &s;
+println!("{view}");
 ```
 Possible output
-  ```
-  hello world
-  ```
+```
+hello world
+```
+
 
 ---
 ## Examples
