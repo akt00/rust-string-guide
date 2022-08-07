@@ -32,8 +32,18 @@ In Rust, you often see two types of strings, String and &str. According to the [
 > A String is stored as a vector of bytes (Vec\<u8\>), but guaranteed to always be a valid UTF-8 sequence. String is heap allocated, growable and not null terminated. \
 &str is a slice (&[u8]) that always points to a valid UTF-8 sequence, and can be used to view into a String, just like &[T] is a view into Vec<T>.
 
-This basically means String is a Vec\<u8\> container which contains UTF-8 characters allocated on heap, and &str is a view over String. 
+This basically means String is a Vec\<u8\> container which contains UTF-8 characters allocated on heap, and &str is a view over a string object. 
 
+
+Below, str1 is allocated on heap with String::from method. str2 is a string view on a string literal which is directory embedded in the binary. 
+```rb
+let str1 = String::from("hello"); // String
+let str2 = "Hello"; // &str
+```
+
+Since $str is a view, you cannot modify the value it is referencing unlike String.
+```rb
+str1 += " World";
 
 ---
 ## Examples
