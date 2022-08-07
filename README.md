@@ -3,7 +3,7 @@
 ## Preface
 
 ### *Motivation*
-Coming from the background of C/C++ and a bit of Python and Javascript, I found Rust's string type system a little confusing. So I wrote this down to help understand the Rust's string data type.
+Coming from the background of C/C++ and a bit of Python and Javascript, I found the Rust's string type system a little confusing. So I wrote this down to help understand the Rust's string data type.
 ### *Expected Level*
 Beginner - Intermediate
 ### *References*
@@ -15,7 +15,7 @@ Beginner - Intermediate
 ## Introduction
 
 ### *Rust's char type*
-This is the first caveat when learning Rust's string. Rust's string is UTF-8 by default. A charater in UTF-8 can be either 1, 2, 3 or 4 bytes. Thus, Rust's char is 4 bytes by default. This is different from C/C++'s char data type, which is 1 byte by default.
+This is the first caveat when learning Rust's string. Rust's string is UTF-8 by default. A charater in UTF-8 can be either 1, 2, 3 or 4 bytes. Thus, Rust's char is 4 bytes by default. This is different from C/C++'s char data type which is 1 byte by default.
 
 Example
 ```rb
