@@ -12,6 +12,18 @@ Beginner - Intermediate
 3. [Rust-doc Str](https://doc.rust-lang.org/std/primitive.str.html#impl-Add%3C%26%27_%20str%3E)
 
 
-# Introduction
+## Introduction
 
+### *Rust's char type*
+This is the first caveat when learning Rust's string. Rust's string is UTF-8 by default. A charater in UTF-8 can be either 1, 2, 3 or 4 bytes. Thus, Rust's char is 4 bytes by default. This is different from C/C++'s char data type, which is 1 byte by default.
 
+Example
+```rb
+println!("size of char = {} bytes", size_of::<char>());
+```
+Possible output
+```rb
+size of char = 4 bytes
+```
+
+### String and &str
