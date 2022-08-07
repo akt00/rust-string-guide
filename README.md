@@ -27,3 +27,6 @@ size of char = 4 bytes
 ```
 
 ### String and &str
+In Rust, you often see two types of strings, String and &str. According to the [Rust by Example], the difference is > A String is stored as a vector of bytes (Vec<u8>), but guaranteed to always be a valid UTF-8 sequence. String is heap allocated, growable and not null terminated.
+
+&str is a slice (&[u8]) that always points to a valid UTF-8 sequence, and can be used to view into a String, just like &[T] is a view into Vec<T>.
