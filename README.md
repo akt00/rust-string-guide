@@ -10,8 +10,8 @@ Explains Rust's string data types with examples. I have also made an ASCII strin
 Beginner
 ### *References*
 1. [Rust By Example](https://doc.rust-lang.org/rust-by-example/std/str.html)
-2. [Rust-doc String](https://doc.rust-lang.org/std/string/struct.String.html#method.split_off)
-3. [Rust-doc str](https://doc.rust-lang.org/std/primitive.str.html#impl-Add%3C%26%27_%20str%3E)
+2. [Rust-doc String](https://doc.rust-lang.org/std/string/struct.String.html)
+3. [Rust-doc str](https://doc.rust-lang.org/std/primitive.str.html)
 
 
 ## Introduction to Rust's string data types
