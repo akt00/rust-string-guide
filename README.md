@@ -4,15 +4,17 @@
 
 ### *Motivation*
 Coming from the background of C/C++ and a bit of Python and Javascript, I found the Rust's string type system a little confusing. So I wrote this down to help understand the Rust's string data type.
+### *Objectives*
+Explains Rust's string data types with examples. I have also made an ASCII string datype which you can use just like the string in C/C++ for a toy project. 
 ### *Expected Level*
-Beginner - Intermediate
+Beginner
 ### *References*
 1. [Rust By Example](https://doc.rust-lang.org/rust-by-example/std/str.html)
 2. [Rust-doc String](https://doc.rust-lang.org/std/string/struct.String.html#method.split_off)
 3. [Rust-doc str](https://doc.rust-lang.org/std/primitive.str.html#impl-Add%3C%26%27_%20str%3E)
 
 
-## Introduction
+## Introduction to Rust's string data types
 
 ### *Rust's char type*
 This is the first caveat when learning Rust's string. Rust's string is UTF-8 by default. A charater in UTF-8 can be either 1, 2, 3 or 4 bytes. Thus, Rust's char is 4 bytes by default. This is different from C/C++'s char data type which is 1 byte by default.
