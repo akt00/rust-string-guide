@@ -108,8 +108,8 @@ Less
 ```
 Both String and &str implement partial ordering. So, it is also possible to compare strings with comparison operator
 ```rb
-   let s1 = String::from("abc");
-    let s2 = String::from("acb");
-    assert!(s1 < s2); // ok
+let s1 = String::from("abc");
+let s2 = String::from("acb");
+assert!(s1 < s2); // ok
 ```
                      
