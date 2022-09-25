@@ -21,11 +21,11 @@ This is the first caveat when learning Rust's string. Rust's string is UTF-8 by 
 
 Example
 ```rb
-println!("size of char = {} bytes", size_of::<char>());
+  println!("size of char = {} bytes", size_of::<char>());
 ```
 Output
 ```
-size of char = 4 bytes
+  size of char = 4 bytes
 ```
 
 ### *String and &str*
@@ -39,53 +39,53 @@ This basically means String is a Vec\<u8\> container which contains UTF-8 charac
 
 Bellow, s1 is allocated on heap with String::from method. s2 is a string view over a string literal which is directory embedded in the binary.
 ```rb
-let s1 = String::from("hello"); // String
-let s2 = "Hello"; // &str
+  let s1 = String::from("hello"); // String
+  let s2 = "Hello"; // &str
 ```
 
 Since &str is a view, you cannot modify the value it is referencing unlike String.
 ```rb
-let mut s1 = String::from("hello"); // String
-let mut s2 = "hello"; // &str
+  let mut s1 = String::from("hello"); // String
+  let mut s2 = "hello"; // &str
 
-s1 += " world"; // ok
-s2 += " world"; // error
+  s1 += " world"; // ok
+  s2 += " world"; // error
 ```
 
 You can also create a view over a String.
 ```rb
-let s = String::from("hello world");
-let view: &str = &s;
-println!("{view}");
+  let s = String::from("hello world");
+  let view: &str = &s;
+  println!("{view}");
 ```
 Output
 ```
-hello world
+  hello world
 ```
 
 ### *Indexing*
 In C/C++, you can access the characters in a string by indexing like so,
 ```rb
-std::string str = "pen";
-str[1] = 'a';
-std::cout << str << std::endl;
+  std::string str = "pen";
+  str[1] = 'a';
+  std::cout << str << std::endl;
 ```
 Output
 ```
-pan
+  pan
 ```
 
 However, in Rust, it is not possible to access the elements in a string by indexing because the UTF-8 character is variable length.
 ```rb
-let mut s = String::from("pen");
-s[1] = 'a'; // error
+  let mut s = String::from("pen");
+  s[1] = 'a'; // error
 ```
 You can access each element through an iterator. However, you cannot randomly index into a character nor change the value because a UTF-8 character in a string is not easy to replace due to variable length.
 ```rb
-let s = String::from("hello");
-for i in s.chars() {
-  print!("{i}");
-}
+  let s = String::from("hello");
+  for i in s.chars() {
+    print!("{i}");
+  }
 ```
 Output
 ```
@@ -108,8 +108,8 @@ Less
 ```
 Both String and &str implement partial ordering. So, it is also possible to compare strings with comparison operator
 ```rb
-let s1 = String::from("abc");
-let s2 = String::from("acb");
-assert!(s1 < s2); // ok
+  let s1 = String::from("abc");
+  let s2 = String::from("acb");
+  assert!(s1 < s2); // ok
 ```
                      
