@@ -112,4 +112,20 @@ Both String and &str implement partial ordering. So, it is also possible to comp
   let s2 = String::from("acb");
   assert!(s1 < s2); // ok
 ```
-                     
+### *Concatenation*
+The string on the left side of addition operator must be owned
+```rb
+  let msg = "hello".to_owned() + " world";
+  assert!(msg == "hello world"); // ok
+```
+You can also concatanate a string to an exsiting String with add-assign operator
+```rb
+  let mut msg = String::from("hello");
+  msg += " world";
+  assert!(msg == "hello world"); // ok                 
+```                   
+                   
+                   
+                   
+                   
+                   
