@@ -104,7 +104,7 @@ hello
 ```
 Output
 ```
-Less
+  Less
 ```
 Both String and &str implement partial ordering. So, it is also possible to compare strings with comparison operator
 ```rb
