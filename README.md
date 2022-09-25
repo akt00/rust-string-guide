@@ -94,3 +94,18 @@ hello
 
 ---
 ## Examples
+
+### *Comparison*
+```rb
+ let s1 = "abc";
+ let s2 = "acb";
+ let ret = s1.partial_cmp(s2);
+ if let Some(res) = ret {
+     println!("{:?}", res);
+ }
+```
+Output
+```
+Less
+```
+
