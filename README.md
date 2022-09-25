@@ -99,13 +99,17 @@ hello
 ```rb
  let s1 = "abc";
  let s2 = "acb";
- let ret = s1.partial_cmp(s2);
- if let Some(res) = ret {
-     println!("{:?}", res);
- }
+ let ord = s1.cmp(s2);
+ println!("{:?}", ord);
 ```
 Output
 ```
 Less
 ```
-
+Both String and &str implement partial ordering. So, it is also possible to compare strings with comparison operator
+```rb
+   let s1 = String::from("abc");
+    let s2 = String::from("acb");
+    assert!(s1 < s2); // ok
+```
+                     
