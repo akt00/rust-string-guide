@@ -23,7 +23,7 @@ Example
 ```rb
 println!("size of char = {} bytes", size_of::<char>());
 ```
-Possible output
+Output
 ```
 size of char = 4 bytes
 ```
@@ -58,7 +58,7 @@ let s = String::from("hello world");
 let view: &str = &s;
 println!("{view}");
 ```
-Possible output
+Output
 ```
 hello world
 ```
@@ -70,7 +70,7 @@ std::string str = "pen";
 str[1] = 'a';
 std::cout << str << std::endl;
 ```
-Possible output
+Output
 ```
 pan
 ```
@@ -87,7 +87,7 @@ for i in s.chars() {
   print!("{i}");
 }
 ```
-Possible output
+Output
 ```
 hello
 ```
