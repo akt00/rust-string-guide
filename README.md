@@ -101,7 +101,7 @@ String to &str
   let s = String::from("hello world");
   let copy = &s as &str;
 ```
-String to Vec<u8>
+String to Vec\<u8\>
 ```rb
   let s = String::from("hello world");
   let copy = s.as_bytes().to_vec();
