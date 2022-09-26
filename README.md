@@ -106,7 +106,27 @@ String to Vec\<u8\>
   let s = String::from("hello world");
   let copy = s.as_bytes().to_vec();
 ```
-
+&str to String
+```rb
+  let s = "hello world";
+  let copy = s.to_string();
+```
+&str to Vec\<u8\>
+```rb
+  let s = "hello world";
+  let copy = s.as_bytes().to_vec();
+```
+Vec\<u8\> to String
+```rb
+  let v = "hello world".as_bytes().to_vec();
+  let s = String::from_utf8(v).unwrap();
+```
+Vec\<u8\> to &str
+```rb
+  use std::str;
+  let v = "hello world".as_bytes().to_vec();
+  let s = str::from_utf8(&v).unwrap();
+```
 ### *Comparison*
 ```rb
  let s1 = "abc";
