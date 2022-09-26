@@ -1,4 +1,4 @@
-# Rust-String-Types-Guide
+# Rust-String-Guide
 
 ## Preface
 
