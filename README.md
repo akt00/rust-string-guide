@@ -127,6 +127,16 @@ Vec\<u8\> to &str
   let v = "hello world".as_bytes().to_vec();
   let s = str::from_utf8(&v).unwrap();
 ```
+String to number
+```rb
+  let s = "-0.123";
+  let f = s.parse::<f32>().unwrap();
+```
+Number to String
+```rb
+  let f = -0.123;
+  let s = f.to_string();
+```
 ### *Comparison*
 ```rb
  let s1 = "abc";
@@ -138,19 +148,19 @@ Output
 ```
   Less
 ```
-Both String and &str implement partial ordering. So, it is also possible to compare strings with comparison operator
+Both String and &str implement partial ordering. So, it is also possible to compare strings with comparison operator.
 ```rb
   let s1 = String::from("abc");
   let s2 = String::from("acb");
   assert!(s1 < s2); // ok
 ```
 ### *Concatenation*
-The string on the left side of addition operator must be owned
+The string on the left side of addition operator must be owned.
 ```rb
   let msg = "hello".to_owned() + " world";
   assert!(msg == "hello world"); // ok
 ```
-You can also concatanate a string to an exsiting String with add-assign operator
+You can also concatanate a string to an exsiting String with add-assign operator.
 ```rb
   let mut msg = String::from("hello");
   msg += " world";
