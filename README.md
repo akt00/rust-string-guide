@@ -95,6 +95,18 @@ hello
 ---
 ## Examples
 
+### *Conversion*
+String to &str
+```rb
+  let s = String::from("hello world");
+  let copy = &s as &str;
+```
+String to Vec<u8>
+```rb
+  let s = String::from("hello world");
+  let copy = s.as_bytes().to_vec();
+```
+
 ### *Comparison*
 ```rb
  let s1 = "abc";
@@ -123,9 +135,4 @@ You can also concatanate a string to an exsiting String with add-assign operator
   let mut msg = String::from("hello");
   msg += " world";
   assert!(msg == "hello world"); // ok                 
-```                   
-                   
-                   
-                   
-                   
-                   
+```
