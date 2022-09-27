@@ -166,3 +166,23 @@ You can also concatanate a string to an exsiting String with add-assign operator
   msg += " world";
   assert!(msg == "hello world"); // ok                 
 ```
+### *Replacing*
+Replacing all the matched patterns
+```rb
+  let s = "foo foo 1 foo";
+  let ret = s.replace("foo", "hoo");
+  assert!(ret == "hoo hoo 1 hoo"); // ok
+```
+Replacing the first N matched patterns
+```rb
+  let s = "foo foo 1 foo";
+  let ret = s.replacen("foo", "hoo", 2);
+  assert!(ret == "hoo hoo 1 foo"); // ok
+```
+Replacing the N'th matched pattern.
+```rb
+  let mut s = "foo foo 1 foo".to_string();
+  // you need to know the precise range of the string you are replacing \i\n advance
+  s.replace_range(4..7, "hoo");
+  assert!(s == "foo hoo 1 foo"); // ok
+```
