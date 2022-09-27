@@ -182,7 +182,7 @@ Replacing the first N matched patterns
 Replacing the N'th matched pattern.
 ```rb
   let mut s = "foo foo 1 foo".to_string();
-  // you need to know the precise range of the string you are replacing \i\n advance
+  // you need to know the precise range of the string you are replacing in advance
   s.replace_range(4..7, "hoo");
   assert!(s == "foo hoo 1 foo"); // ok
 ```
