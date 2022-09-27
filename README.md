@@ -5,7 +5,7 @@
 ### *Motivation*
 Coming from the background of C/C++ and a bit of Python and Javascript, I found the Rust's string type system a little confusing. So I wrote this down to help understand the Rust's string data type.
 ### *Objectives*
-Explains Rust's string data types with examples. I have also made an ASCII string datype which you can use just like the string in C/C++ for a toy project. 
+Explains Rust's string data types with examples. I have also made an ASCII string datype which you can use just like the string in C/C++ as a toy project. 
 ### *Expected Level*
 Beginner
 ### *References*
