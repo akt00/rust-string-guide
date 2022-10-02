@@ -179,7 +179,7 @@ Replacing the first N matched patterns
   let ret = s.replacen("foo", "hoo", 2);
   assert!(ret == "hoo hoo 1 foo"); // ok
 ```
-Replacing the N'th matched pattern.
+Replacing the matched pattern at Nth occurrences.
 ```rb
   let mut s = "foo foo 1 foo".to_string();
   // you need to know the precise range of the string you are replacing in advance.
